@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="https://i.ibb.co/rfhZBX9/my-Avatar-1.png">
+	<link rel="favicon" href="https://i.ibb.co/rfhZBX9/my-Avatar-1.png">
+	<script src="https://kit.fontawesome.com/b4d3efb29c.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<title>ManuTheCoder's Resume!</title>
+	<meta name="title" content="ManuTheCoder's Resume!">
+	<meta name="description" content="Hi! My name is Manu, and I have a a passion to code HTML, CSS, JS, PHP, SQL, and more! I believe that the world can become a better place by coding! That's why all of my projects are free and open source to everyone.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://metatags.io/">
+	<meta property="og:title" content="ManuTheCoder's Resume!">
+	<meta property="og:description" content="Hi! My name is Manu, and I have a a passion to code HTML, CSS, JS, PHP, SQL, and more! I believe that the world can become a better place by coding! That's why all of my projects are free and open source to everyone.">
+	<meta property="og:image" content="https://free4kwallpapers.com/uploads/originals/2020/05/02/morgan-codes-wallpaper.png">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://metatags.io/">
+	<meta property="twitter:title" content="ManuTheCoder's Resume!">
+	<meta property="twitter:description" content="Hi! My name is Manu, and I have a a passion to code HTML, CSS, JS, PHP, SQL, and more! I believe that the world can become a better place by coding! That's why all of my projects are free and open source to everyone.">
+	<meta property="twitter:image" content="https://free4kwallpapers.com/uploads/originals/2020/05/02/morgan-codes-wallpaper.png">
+	<style>
+		* {
+			box-sizing: border-box
+		}
+		body, html {
+			margin: 0;
+			font-family: 'Nunito', sans-serif;
+		}
+		@page {
+				margin: 0;
+		}
+		.col {
+			float: left;
+			padding: 10px;
+		}
+		.contact i {
+			font-size: 24px;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+		.contact a {
+			color: #aaa
+		}
+		a {
+			text-decoration: none;
+		}
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.contact {
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.s3 {
+			/* background: #212121; */
+			width: 30%;
+			color: white;
+			padding: 20px !important;
+		}
+		.fakeNav {
+			width: 30%;
+			background: #222933;
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			z-index: -1
+		}
+		.s7 {
+			width: 70%
+		}
+		.heading i {
+			font-size: 24px;
+			margin-right: 10px;
+			vertical-align: middle
+		}
+		hr {
+			border-style: solid;
+			border: 1px solid #bbb;
+		}
+		.s4 {
+			width: 25%
+		}
+		.btn {
+			box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+			width: 100%;
+			display: block;
+			background: #475469;
+			color: white;
+			padding: 10px;
+			border-radius: 5px;
+			transition: transform .2s;
+			text-align: center;
+		}
+		.btn:active {
+			transform: translateY(4px)
+		}
+		.col.s4 p{
+			/* height: 200px */
+		}
+		.contact a:hover {
+			color: #fff;
+		}
+		@media only screen and (max-width: 600px) {
+			.col,.fakeNav {
+				width: 100% !important;
+			}
+			.fakeNav {
+				height: 100vh !important;
+				position: absolute;
+			}
+		}
+		p:not(.contact p) {
+			line-height: 25px;
+		}
+		.langs {
+			margin-top: 30px;
+		}
+		.progress {
+			width: 100%;
+			background: rgba(255, 255, 255, .3);
+			height: 3px;
+			margin: 10px 0;
+			border-radius: 3px;
+		}
+		.progress .indicator {
+			animation: progress .4s forwards
+		}
+		@keyframes progress {
+			0% {
+				opacity: 0;
+				width: 0;
+			}
+		}
+		.indicator {
+			height: 100%;
+			background: white;
+		}
+		@media print {
+			.col.s4 {
+				width: 50% !important;
+			}
+			.col.s4 p {
+				height: 120px;
+			}
+			.fakeNav {
+				width: 35%;
+			}
+			.col.s3 {
+				width: 35% !important
+			}
+			.col.s7 {
+				padding-left: 10px !important;
+				width: 65% !important
+			}
+		}
+		html {
+			opacity: 0;
+			animation: op .5s forwards;
+			animation-delay: .3s;
+		}
+		@keyframes op {
+			0% {
+				opacity: 0
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="fakeNav"></div>
+	<div class="row">
+		<div class="col s3">
+			<img src="https://i.ibb.co/rfhZBX9/my-Avatar-1.png" width="50%">
+			<h1>Manu G.</h1>
+			<h2>ManuTheCoder</h2>
+			<p><b>Contact</b></p>
+			<div class="contact">
+				<a href="mailto:manuthecoder@protonmail.com">
+					<p>
+						<i class="fa fa-envelope"></i> <span>manuthecoder@protonmail.com</span>
+					</p>
+				</a>
+				<a href="#">
+					<p>
+						<i class="fab fa-discord"></i> <span>manuthecoder#5821</span>
+					</p>
+				</a>
+				<a href="https://manuthecoder.ml">
+					<p>
+						<i class="fa fa-globe"></i> <span>www.manuthecoder.ml</span>
+					</p>
+				</a>
+				<a href="https://stackoverflow.com/users/14715255/manuthecoder">
+					<p>
+						<i class="fab fa-stack-overflow"></i> <span>@manuthecoder</span>
+					</p>
+				</a>
+				<a href="https://dev.to/manuthecoder">
+					<p>
+						<i class="fab fa-dev"></i> <span>@ManuTheCoder</span>
+					</p>
+				</a>
+				<a href="https://github.com/manuthecoder">
+					<p>
+						<i class="fa fa-github"></i> <span>@ManuTheCoder</span>
+					</p>
+				</a>
+			</div>
+
+			<div class='langs'>
+				<h4>Languages</h4>
+				JavaScript 
+				<div class="progress">
+					<div class="indicator" style="width: 80%"></div>
+				</div>
+				HTML 
+				<div class="progress">
+					<div class="indicator" style="width: 100%"></div>
+				</div>
+				CSS 
+				<div class="progress">
+					<div class="indicator" style="width: 95%"></div>
+				</div>
+				PHP 
+				<div class="progress">
+					<div class="indicator" style="width: 75%"></div>
+				</div>
+				SQL 
+				<div class="progress">
+					<div class="indicator" style="width: 90%"></div>
+				</div>
+				Node.JS 
+				<div class="progress">
+					<div class="indicator" style="width: 60%"></div>
+				</div>
+				React
+				<div class="progress">
+					<div class="indicator" style="width: 50%"></div>
+				</div>
+			</div>
+		</div>
+		<div class="col s7" style="height: 100vh;padding: 20px;background: #fff">
+			<h3 class="heading"><i class="fa fa-user"></i>About</h3>
+			<p>Hi! My name is Manu, and I have a a passion to code HTML, CSS, JS, PHP, SQL, and more! I believe that the world can become a better place by coding! That's why all of my projects are <i>free</i> and open source to everyone.</p>
+			<hr>
+			<h3 class="heading"><i class="fa fa-graduation-cap"></i>Education</h3>
+			<p>
+				<b>Turtle Rock Elementary School</b>  <br>
+				Elementary School
+			</p>
+			<p>
+				<b>Venado Middle School</b>  <br>
+				Middle School
+			</p>
+			<p>
+				<b>Irvine High School</b>  <br>
+				High School (Yet to conquer...)
+			</p>
+			
+			<hr>
+
+				<h3 class="heading"><i class="fa fa-flask"></i>Projects</h3>
+			<div class="row">
+				<div class="col s4">
+					<p>
+						<b>Smartlist</b>  <br>
+						Smartlist is a free home inventory app which lets you keep track of what you have in your home, and helps you save!
+					</p>
+					<a href="https://smartlist.ga" class="btn" target="_blank">View Project!</a>
+				</div>
+				<div class="col s4">
+					<p>
+						<b>Devlist</b>  <br>
+						Devlist is a web app where you can keep track of your coding projects for free and become much productive! 
+					</p>
+					<a href="https://devlist.rf.gd" class="btn" target="_blank">View Project!</a>
+				</div>
+				<div class="col s4">
+					<p>
+						<b>OnlineFTP</b>  <br>
+						OnlineFTP is an in-browser FTP that lets you edit files on your server in the browser on any device
+					</p>
+					<a href="https://onlineftp.rf.gd" class="btn" target="_blank">View Project!</a>
+				</div>
+				<div class="col s4">
+					<p>
+						<b>DocJS</b>  <br>
+						DocJS is a documentation generator for your website using pure JS, no external dependencies
+					</p>
+					<a href="https://manuthecoder.github.io/docjs" class="btn" target="_blank">View Project!</a>
+				</div>
+			</div>
+		
+			<hr>
+
+		</div>
+	</div>
+</body>
+</html>
