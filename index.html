@@ -1,3 +1,9 @@
+<!--
+	 Welcome to my resume!
+	 If you're viewing this, you're probably a geek 🤓 
+	 If you have any questions, feel free to email me at: manuthecoder@protonmail.com
+	 Hope you like it!
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,6 +63,9 @@
 			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
+		}
+		.s31 {
+			width: 30.33%
 		}
 		.s3 {
 			/* background: #212121; */
@@ -130,6 +139,9 @@
 			margin: 10px 0;
 			border-radius: 3px;
 		}
+		.s2 {
+			width: 50%
+		}
 		.progress .indicator {
 			animation: progress .4s forwards
 		}
@@ -139,13 +151,24 @@
 				width: 0;
 			}
 		}
+		.show_on_print_only {
+			display: none;
+			color: gray;
+			margin: 5px 0;
+		}
 		.indicator {
 			height: 100%;
 			background: white;
 		}
 		@media print {
+			.show_on_print_only {
+				display: block;
+			}
 			.col.s4 {
 				width: 50% !important;
+			}
+			.btn {
+				display: none
 			}
 			.col.s4 p {
 				height: 120px;
@@ -250,23 +273,25 @@
 			</div>
 		</div>
 		<div class="col s7" style="height: 100vh;padding: 20px;background: #fff">
-			<h3 class="heading"><i class="fa fa-user"></i>About</h3>
+			<h3 class="heading"><i class="far fa-user"></i>About</h3>
 			<p>Hi! My name is Manu, and I have a a passion to code HTML, CSS, JS, PHP, SQL, and more! I believe that the world can become a better place by coding! That's why all of my projects are <i>free</i> and open source to everyone.</p>
 			<hr>
 			<h3 class="heading"><i class="fa fa-graduation-cap"></i>Education</h3>
-			<p>
+			<div class="row">
+			<div class="col s31">
 				<b>Turtle Rock Elementary School</b>  <br>
 				Elementary School
-			</p>
-			<p>
+			</div>
+			<div class="col s31">
 				<b>Venado Middle School</b>  <br>
 				Middle School
-			</p>
-			<p>
+			</div>
+			<div class="col s31">
 				<b>Irvine High School</b>  <br>
 				High School (Yet to conquer...)
-			</p>
-			
+			</div>
+			</div>
+
 			<hr>
 
 				<h3 class="heading"><i class="fa fa-flask"></i>Projects</h3>
@@ -275,6 +300,7 @@
 					<p>
 						<b>Smartlist</b>  <br>
 						Smartlist is a free home inventory app which lets you keep track of what you have in your home, and helps you save!
+						<span class="show_on_print_only">www.smartlist.ga</span>
 					</p>
 					<a href="https://smartlist.ga" class="btn" target="_blank">View Project!</a>
 				</div>
@@ -282,6 +308,7 @@
 					<p>
 						<b>Devlist</b>  <br>
 						Devlist is a web app where you can keep track of your coding projects for free and become much productive! 
+						<span class="show_on_print_only">devlist.rf.gd</span>
 					</p>
 					<a href="https://devlist.rf.gd" class="btn" target="_blank">View Project!</a>
 				</div>
@@ -289,6 +316,7 @@
 					<p>
 						<b>OnlineFTP</b>  <br>
 						OnlineFTP is an in-browser FTP that lets you edit files on your server in the browser on any device
+						<span class="show_on_print_only">onlineftp.rf.gd</span>
 					</p>
 					<a href="https://onlineftp.rf.gd" class="btn" target="_blank">View Project!</a>
 				</div>
@@ -296,14 +324,79 @@
 					<p>
 						<b>DocJS</b>  <br>
 						DocJS is a documentation generator for your website using pure JS, no external dependencies
+						<span class="show_on_print_only">docjs.pages.dev</span>
 					</p>
 					<a href="https://manuthecoder.github.io/docjs" class="btn" target="_blank">View Project!</a>
 				</div>
 			</div>
 		
 			<hr>
+			<div>
+				<h3 class="heading"><i class="fa fa-award"></i>Awards &amp; events participated in</h3>
+				<div class="row">
+				<div class="col s2">
+					<b>HackOR</b> Mar 2021<br>
+					1<sup>st</sup> place - Best Beginner Hack
+				</div>
+				<div class="col s2">
+					<b>CyberPatriot</b> Dec 2020<br>
+					Participated in CyberPatriot Competition
+				</div>
+				</div>
+			</div>
 
 		</div>
 	</div>
+	<script>
+		window.addEventListener('load', function() {
+			window.scrollTo(0, 0)
+		});
+		    var ele = document.documentElement;
+    // ele.style.cursor = 'grab';
+
+    let pos = {
+      top: 0,
+      left: 0,
+      x: 0,
+      y: 0
+    };
+   // Just some enhancements while scrolling...
+			var mouseDownHandler = function(e) {
+				// ele.style.cursor = 'grabbing';
+				ele.style.userSelect = 'none';
+
+				pos = {
+					left: ele.scrollLeft,
+					top: ele.scrollTop,
+					// Get the current mouse position
+					x: e.clientX,
+					y: e.clientY,
+				};
+
+				document.addEventListener('mousemove', mouseMoveHandler);
+				document.addEventListener('mouseup', mouseUpHandler);
+			};
+
+			var mouseMoveHandler = function(e) {
+				// How far the mouse has been moved
+				var dx = e.clientX - pos.x;
+				var dy = e.clientY - pos.y;
+
+				// Scroll the element
+				ele.scrollTop = pos.top - dy;
+				ele.scrollLeft = pos.left - dx;
+			};
+
+			var mouseUpHandler = function() {
+				// ele.style.cursor = 'grab';
+				ele.style.removeProperty('user-select');
+
+				document.removeEventListener('mousemove', mouseMoveHandler);
+				document.removeEventListener('mouseup', mouseUpHandler);
+			};
+
+			// Attach the handler
+			ele.addEventListener('mousedown', mouseDownHandler);
+	</script>
 </body>
 </html>
